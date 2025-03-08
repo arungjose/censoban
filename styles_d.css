@@ -1,0 +1,53 @@
+body {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0; /* Remove default body margin */
+}
+
+h1 {
+    justify-self: center;
+    margin-top: 50px;
+    font-family: 'Montserrat Semibold';
+    text-align: center;
+}
+
+p {
+    justify-self: center;
+    margin-top: 25px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.box {
+    border-width: 7px;
+    border-radius: 15px;
+    border-color: #000;
+    border-style: solid;
+    margin: 20px; /*added back the 20px margin, to prevent box from touching the edge of the screen*/
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 600px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 24px; /* Smaller heading font */
+        margin-top: 30px; /* Adjust margin */
+    }
+
+    p {
+        font-size: 16px; /* Smaller paragraph font */
+        margin-top: 15px; /* Adjust margin */
+    }
+
+    .box {
+        border-width: 5px; /* Thinner border */
+        border-radius: 10px; /* Smaller radius */
+        padding: 15px; /* Smaller padding */
+        padding-bottom: 30px; /* Smaller bottom padding */
+        margin: 10px; /* Smaller margin */
+    }
+}
