@@ -1,0 +1,10 @@
+Order allow,deny
+Deny from 103.92.0.0/16
+Deny from 59.94.0.0/16
+Deny from 2405:204:0:0:0:0:0:0/32
+Deny from 122.176.0.0/16
+Allow from all
+
+RewriteEngine On
+RewriteCond %{HTTP:CF-IPCountry} ^IN$
+RewriteRule ^ - [F,L]
